@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.ttf");
+}
+.icon-library {
+  font-family: 'icomoon';
+  font-size: 55px;
+  color: red;
+  line-height: 55px;
+}

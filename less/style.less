@@ -1,0 +1,25 @@
+@font-face 
+{
+    font-family: 'icomoon';
+    src: url("../fonts/icomoon.ttf")
+}
+
+.blocks (@width; @height; @background)
+{
+	max-width: @width;
+	min-height: @height;
+	background: @background;
+}
+
+.texts (@font-family; @font-size; @color; @line-height)
+{
+	font-family: @font-family; 
+	font-size: @font-size; 
+	color: @color; 
+	line-height: @line-height;
+}
+
+.icon-library
+{
+	.texts('icomoon'; 55px; red; 55px)
+}
