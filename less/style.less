@@ -180,6 +180,7 @@ header
 		width: 100%; 
 		display: flex;
 		padding: 20px 0;
+		flex-wrap: wrap;
 
 		div
 		{
@@ -189,8 +190,16 @@ header
 			text-align: center;
 			.texts('OpenSans'; 16.7px; @black; 22.7px);
 			margin: 16.7px 0;
-			width: 33%;
+			min-width: 240px;
 		}
+}
+.whyBrainSchool section div
+{
+	width: 33%;
+}
+.capability section div
+{
+	width: 25%;
 }
 
 .target
@@ -199,12 +208,13 @@ header
 	div
 	{
 		display: flex;
-		width: 100%
+		width: 100%;
+		flex-wrap: wrap;
 	}
 	ul
 	{
-		margin: 15px 0 15px 45px;
-		width: 50%;
+		margin: 15px auto;
+		min-width: 480px;
 		color: #c6c6c6;
 	}
 	li
@@ -247,6 +257,7 @@ header
 	.info
 	{
 		display: flex;
+		flex-wrap: wrap;
 		width: 100%;
 		background: #E0E0E0;
 		h3
@@ -262,6 +273,7 @@ header
 		div
 		{
 			width: 50%;
+			min-width: 480px;
 		}
 		ul
 		{
@@ -336,5 +348,13 @@ footer
 		{
 			margin-left: 15px;
 		}
+	}
+}
+
+@media screen and (max-width: 900px)
+{
+	.menu nav
+	{
+		display: none;	
 	}
 }

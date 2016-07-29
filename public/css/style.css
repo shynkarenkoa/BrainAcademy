@@ -179,6 +179,8 @@ button {
   display: -ms-flexbox;
   display: flex;
   padding: 20px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .whyBrainSchool section div,
 .capability section div {
@@ -198,7 +200,13 @@ button {
   color: #000000;
   line-height: 22.7px;
   margin: 16.7px 0;
+  min-width: 240px;
+}
+.whyBrainSchool section div {
   width: 33%;
+}
+.capability section div {
+  width: 25%;
 }
 .target {
   background: #E0E0E0;
@@ -208,10 +216,12 @@ button {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .target ul {
-  margin: 15px 0 15px 45px;
-  width: 50%;
+  margin: 15px auto;
+  min-width: 480px;
   color: #c6c6c6;
 }
 .target li {
@@ -265,6 +275,8 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   background: #E0E0E0;
 }
@@ -284,6 +296,7 @@ button {
 }
 .directions .info div {
   width: 50%;
+  min-width: 480px;
 }
 .directions .info ul {
   background: -webkit-linear-gradient(top, rgba(35, 31, 32, 0.03) 0%, rgba(35, 31, 32, 0.08) 100%);
@@ -360,4 +373,9 @@ footer div a {
 footer div img,
 footer div a img {
   margin-left: 15px;
+}
+@media screen and (max-width: 900px) {
+  .menu nav {
+    display: none;
+  }
 }
