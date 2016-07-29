@@ -2,9 +2,267 @@
   font-family: 'icomoon';
   src: url("../fonts/icomoon.ttf");
 }
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../fonts/OpenSansRegular.ttf");
+}
+h1,
+h2,
+h3,
+button,
+p,
+a {
+  all: unset;
+}
 .icon-library {
   font-family: 'icomoon';
   font-size: 55px;
-  color: red;
-  line-height: 55px;
+  color: #ffffff;
+  line-height: 120px;
+  background: #33c0e1;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+body {
+  max-width: 1920px;
+  min-width: 360px;
+  margin: 0 auto;
+}
+header ul,
+header li {
+  all: unset;
+}
+header ul {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+header li {
+  font-family: 'OpenSans';
+  font-size: 16.25px;
+  color: #009bd6;
+  line-height: 63px;
+  padding: 0 15px;
+}
+header img {
+  padding: 20px 60px 20px 0;
+}
+.menu {
+  max-width: 1200px;
+  min-height: 0;
+  background: white;
+  padding-top: 19px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.menu div {
+  font-family: 'OpenSans';
+  font-size: 12px;
+  color: #009bd6;
+  line-height: 19.2px;
+  width: 100%;
+  text-align: right;
+}
+.menu + section {
+  max-width: 100%;
+  min-height: 0;
+  background: #002b48;
+  font-family: 'OpenSans';
+  font-size: 32.5px;
+  color: #ffffff;
+  line-height: 44.2px;
+}
+.menu + section div {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.successfulChild {
+  background: url('../img/aek.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1920px;
+  min-height: 760px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.successfulChild h2 {
+  font-family: 'OpenSans';
+  font-size: 50px;
+  color: #ffffff;
+  line-height: 68.75px;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+.successfulChild h3 {
+  font-family: 'OpenSans';
+  font-size: 42.5px;
+  color: #ffffff;
+  line-height: 58.4px;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  max-width: 1200px;
+}
+button {
+  background: #aa2525;
+  border-bottom-color: #952020;
+  border: 1px solid #992121;
+  border-width: 1px 0;
+  border-radius: 0.25em;
+  padding: 20px 40px;
+  font-family: 'OpenSans';
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 20px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+  margin-top: 50px;
+}
+.whyBrainSchool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;*/
+}
+.whyBrainSchool h2,
+.whyBrainSchool ~ article h2 {
+  font-family: 'OpenSans';
+  font-size: 38px;
+  color: #000000;
+  line-height: 52.4px;
+  margin: 40px 0 20px 0;
+}
+.whyBrainSchool > p {
+  font-family: 'OpenSans';
+  font-size: 15.2px;
+  color: #000000;
+  line-height: 24.3px;
+  margin: 15px 0;
+  padding-left: 30px;
+}
+.whyBrainSchool section,
+.capability section {
+  width: 100%;
+  display: flex;
+  padding: 20px 0;
+}
+.whyBrainSchool section div,
+.capability section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'OpenSans';
+  font-size: 16.7px;
+  color: #000000;
+  line-height: 22.7px;
+  margin: 16.7px 0;
+  width: 33%;
+}
+.target {
+  background: #E0E0E0;
+}
+.target div {
+  display: flex;
+  width: 100%;
+}
+.target ul {
+  margin: 15px 0 15px 45px;
+  width: 50%;
+  color: #c6c6c6;
+}
+.target li {
+  margin: 20px 0 10px 0;
+  font-family: 'OpenSans';
+  font-size: 21px;
+  color: #000000;
+  line-height: 29px;
+  color: #c6c6c6;
+}
+.target li span {
+  color: #000000;
+}
+.capability,
+.directions,
+.target,
+.groups,
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.directions {
+  font-family: 'OpenSans';
+  font-size: 15.2px;
+  color: #000000;
+  line-height: 24.3px;
+}
+.directions #camp,
+.directions #programming {
+  position: relative;
+  cursor: pointer;
+  padding: 10px 10px;
+  border: 1px solid #e1e1e1;
+  width: 95%;
+  margin: 10px 10px;
+}
+.directions #camp:hover,
+.directions #programming:hover {
+  background: #E0E0E0;
+}
+.directions .info {
+  display: flex;
+  width: 100%;
+  background: #E0E0E0;
+}
+.directions .info h3 {
+  font-family: 'OpenSans';
+  font-size: 27px;
+  color: #000000;
+  line-height: 37px;
+  margin: 30px 0 15px 0;
+}
+.directions .info p {
+  font-family: 'OpenSans';
+  font-size: 15px;
+  color: #000000;
+  line-height: 24px;
+  margin: 15px 0;
+}
+.directions .info div {
+  width: 50%;
+}
+.directions .info ul {
+  background: linear-gradient(to bottom, rgba(35, 31, 32, 0.03) 0%, rgba(35, 31, 32, 0.08) 100%);
+  margin: 30px 0;
+  border-left: solid 8px #2f92ee;
+  padding: 10px 1px 15px 17px;
+  width: 57%;
+  font-family: 'OpenSans';
+  font-size: 18.2px;
+  color: #000000;
+  line-height: 18.2px;
+}
+.directions .info ul li {
+  margin: 18px 0;
+  list-style-type: none;
+}
+.wrapper {
+  width: 100%;
+}
+.wrapper a {
+  border: 1px solid #e1e1e1;
+  cursor: pointer;
+  width: 33%;
+  background: rgba(35, 31, 32, 0.06);
+  opacity: .8;
+  text-align: left;
 }

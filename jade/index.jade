@@ -8,12 +8,11 @@ html(lang='ru')
     link(rel='stylesheet', type='text/css', href='./css/style.css')
 
     mixin header-nav(...items)
-      article  
-        nav
-          ul
-            each item in items
-              li
-                a(href='#')= item
+      nav
+        ul
+          each item in items
+            li
+              a(href='#')= item
   
   body
     header
@@ -21,14 +20,16 @@ html(lang='ru')
         a(href='/')
           img(src='./img/BA_logo.png', alt='Logo')
         +header-nav('КУРСИ','КАРЄРА','BRAIN ACADEMY','BRAIN SCHOOL','КОНТАКТИ','')
-        a(href='') Увійти
+        div
+          a(href='') Увійти
       section
-        h1 BRAIN SCHOOL
+        div
+          h1 Brain School
     
     main
       article.successfulChild
         h2 Як виростити успішну дитину?
-        button Надыслати заявку
+        button Надіслати заявку
         h3 Brain School - школа особистісного та інформаційного розвитку
         h3 дітей і підлітків
       
@@ -50,14 +51,21 @@ html(lang='ru')
 
       article.target
         h2 Мета навчання:
-        ul
-          li Розширити кругозір дитини в області ІT-технологій
-          li Виявити потенціал до IT і розвивати IT-здібності
-          li Навчити максимально використовувати ІT-технології
-        ul
-          li Поліпшити пам'ять, активувати ресурси головного мозку
-          li Розвинути швидкість, продуктивність, гнучкість мислення
-          li Розвинути креативне мислення і творчу уяву
+        div
+          ul
+            li 
+              span Розширити кругозір дитини в області ІT-технологій
+            li 
+              span Виявити потенціал до IT і розвивати IT-здібності
+            li 
+              span Навчити максимально використовувати ІT-технології
+          ul
+            li 
+              span Поліпшити пам'ять, активувати ресурси головного мозку
+            li 
+              span Розвинути швидкість, продуктивність, гнучкість мислення
+            li 
+              span Розвинути креативне мислення і творчу уяву
 
       article.capability
         h2 Завдяки Brain School Ваша дитина зможе:
@@ -77,9 +85,9 @@ html(lang='ru')
 
       article.directions
         h2 Напрямки навчання:
-        div selector1
-        div selector2
-        section
+        a#camp(href='#') + Табір 
+        a#programming(href='#') + Основи програмування
+        section.info
           div.groups
             h3 Групи і тривалість навчання
             p Ваша дитина може вибрати групу за своїми знаннями, а не за віком
@@ -99,12 +107,12 @@ html(lang='ru')
 
         section.programs
           div.wrapper
-            div
-              a Програма Brain Junior Learner
-            div
-              a Програма Brain Middle Learner
-            div
-              a Програма Brain Senior Learner
+            a#junior 
+              div Програма Brain Junior Learner
+            a#middle 
+              div Програма Brain Middle Learner
+            a#senior 
+              div Програма Brain Senior Learner
           h3 Програма технічного розвитку дитини в Brain School:
             ol
               li Використання ІT в повсякденному житті

@@ -3,6 +3,21 @@
     font-family: 'icomoon';
     src: url("../fonts/icomoon.ttf")
 }
+@font-face 
+{
+    font-family: 'OpenSans';
+    src: url("../fonts/OpenSansRegular.ttf")
+}
+
+@blue: #009bd6;
+@white: #ffffff;
+@navyblue: #002b48;
+@black: #000000;
+
+h1, h2, h3, button, p, a
+{
+	all:unset;
+}
 
 .blocks (@width; @height; @background)
 {
@@ -21,5 +36,261 @@
 
 .icon-library
 {
-	.texts('icomoon'; 55px; red; 55px)
+	.texts('icomoon'; 55px; @white; 120px);
+	background: #33c0e1;
+	width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+body
+{
+	max-width: 1920px;
+	min-width: 360px;
+	margin: 0 auto;
+}
+
+header
+{
+	ul, li
+	{
+		all:unset;
+	}
+	ul
+	{
+		display: flex;
+		flex-wrap: nowrap;
+		white-space: nowrap;
+	}
+	
+	li
+	{
+		.texts('OpenSans'; 16.25px; @blue; 63px);
+		padding: 0 15px;
+	}
+
+	img
+	{
+		padding:20px 60px 20px 0;
+	}
+}
+
+.menu
+{
+	.blocks(1200px; 0; white);
+	padding-top: 19px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+
+	div
+	{
+	.texts('OpenSans'; 12px; @blue; 19.2px);
+	width: 100%;
+	text-align: right;
+	}
+
+	+ section
+	{
+		.blocks(100%; 0; @navyblue);
+		.texts('OpenSans'; 32.5px; @white; 44.2px);
+		div
+		{
+			max-width: 1200px;
+			width: 100%;
+			margin: 0 auto;
+			padding:20px 0;
+		}
+	}
+}
+
+.successfulChild
+{
+
+		background: url('../img/aek.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+
+		max-width: 1920px;
+		min-height: 760px;
+		width: 100%;
+		margin: 0 auto;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+
+		h2
+		{
+			.texts('OpenSans'; 50px; @white; 68.75px);
+		    text-shadow: 0 2px 2px rgba(0,0,0,0.5);
+		}
+		h3
+		{
+			.texts('OpenSans'; 42.5px; @white; 58.4px);
+		    text-shadow: 0 2px 2px rgba(0,0,0,0.5);
+		    max-width: 1200px;
+		}
+	
+}
+
+		button
+		{
+			    background: #aa2525;
+    			border-bottom-color: #952020;
+     			border: 1px solid #992121;
+    			border-width: 1px 0;
+			    border-radius: 0.25em;
+
+    			padding: 20px 40px;
+    			.texts('OpenSans'; 20px; @white; 20px);
+    			text-shadow: 0 1px 0 rgba(0,0,0,0.05);
+  				margin-top: 50px;
+		}
+
+.whyBrainSchool
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+/*	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;*/
+
+	h2, ~article h2
+	{
+		.texts('OpenSans'; 38px; @black; 52.4px);
+		margin: 40px 0 20px 0;
+	}
+	> p
+	{
+		.texts('OpenSans'; 15.2px; @black; 24.3px);
+		margin: 15px 0;
+		padding-left: 30px;
+	}
+}
+
+.whyBrainSchool section, .capability section
+{
+		width: 100%; 
+		display: flex;
+		padding: 20px 0;
+
+		div
+		{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			.texts('OpenSans'; 16.7px; @black; 22.7px);
+			margin: 16.7px 0;
+			width: 33%;
+		}
+}
+
+.target
+{
+	background: #E0E0E0;
+	div
+	{
+		display: flex;
+		width: 100%
+	}
+	ul
+	{
+		margin: 15px 0 15px 45px;
+		width: 50%;
+		color: #c6c6c6;
+	}
+	li
+	{
+		margin: 20px 0 10px 0;
+		.texts('OpenSans'; 21px; @black; 29px);
+		color: #c6c6c6;
+		span
+		{
+			color: @black;
+		}
+	}
+}
+
+.capability, .directions, .target, .groups, .time
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.directions
+{
+	.texts('OpenSans'; 15.2px; @black; 24.3px);
+	#camp, #programming
+	{
+    	position: relative;
+  		cursor: pointer;
+  		padding: 10px 10px;
+ 		border: 1px solid #e1e1e1;
+ 		width: 95%;
+ 		margin: 10px 10px;
+
+ 		&:hover 
+ 		{
+            background: #E0E0E0;
+        }
+	}
+	.info
+	{
+		display: flex;
+		width: 100%;
+		background: #E0E0E0;
+		h3
+		{
+			.texts('OpenSans'; 27px; @black; 37px);
+			margin: 30px 0 15px 0;
+		}
+		p
+		{
+			.texts('OpenSans'; 15px; @black; 24px);
+			margin: 15px 0;
+		}
+		div
+		{
+			width: 50%;
+		}
+		ul
+		{
+			background: linear-gradient(to bottom,rgba(35,31,32,0.03) 0%,rgba(35,31,32,0.08) 100%);
+			margin: 30px 0;
+			border-left: solid 8px #2f92ee;
+    		padding: 10px 1px 15px 17px;
+    		width: 57%;
+
+			
+			.texts('OpenSans'; 18.2px; @black; 18.2px);
+			li
+			{
+				margin:18px 0;
+				list-style-type: none;
+			}
+		}
+	}
+}
+
+.wrapper 
+{
+	width: 100%;
+	a
+	{
+		border: 1px solid #e1e1e1;
+		cursor: pointer;
+		width: 33%;
+		background: rgba(35,31,32,0.06);
+		opacity: .8;
+		text-align: left;
+
+	}
 }
